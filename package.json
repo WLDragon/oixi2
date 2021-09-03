@@ -2,7 +2,11 @@
   "name": "oixi2",
   "main": "index.ts",
   "version": "2.0.1",
-  "description": "a lightweight framework for pixi.js",
+  "description": "A pixi.js library for componentized development",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:WLDragon/oixi2.git"
+  },
   "keywords": [
     "pixi.js",
     "Component development"
@@ -16,17 +20,9 @@
     "components",
     "core"
   ],
-  "scripts": {
-    "dev": "vite serve",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
+  "scripts": {},
   "dependencies": {
     "pixi.js": "^6.0.0"
   },
-  "devDependencies": {
-    "@rollup/plugin-buble": "^0.21.3",
-    "vite": "^2.1.2"
-  },
-  "license": "MIT"
+  "license": "BSD"
 }
