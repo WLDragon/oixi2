@@ -9,7 +9,7 @@ npm install oixi2
 目前只有typescript版本，javascript版需要自己使用源码构建
 
 ## Oixi2 vs Plain code
-```
+``` typescript
 //Oixi2
 OContainer('x=100 y=100', [
   OText('anchor=0.5 position=50', 'Hello Oixi2!')
@@ -41,7 +41,7 @@ oxs函数的主要作用是`初始化目标对象属性`和`分层添加子显�
 
 > 无特殊修饰符的属性表示设置目标对象的属性值，只能是number或ObservablePoint类型的成员
 
-```
+``` typescript
 //slots或template中的代码
 OSprite('#foo x=0 anchor=0.5 position.x=0 @tap=onTap')
 
@@ -61,7 +61,7 @@ private onTap = () => {}
 
 - template: 组件内置的子显示对象列表，支持以下形式
 
-```
+``` typescript
 [
   OText('#label', 'Hello!'),
   CustomComponent(),
@@ -73,7 +73,7 @@ private onTap = () => {}
 
 更多参考请移步 [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)
 
-```
+``` typescript
 //Component.ts
 export function Component(attributes: string) {
   return ox(new XComponent, attributes, () => [
