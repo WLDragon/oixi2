@@ -9,7 +9,7 @@ npm install oixi2
 目前只有typescript版本，javascript版需要自己使用源码构建
 
 ## Oixi2 vs Plain code
-``` typescript
+``` ts
 //Oixi2
 OContainer('x=100 y=100', [
   OText('anchor=0.5 position=50', 'Hello Oixi2!')
