@@ -12,7 +12,8 @@ npm install oixi2
 OContainer('x=100 y=100', [
   OText('anchor=0.5 position=50', 'Hello Oixi2!')
 ])
-
+```
+``` ts
 //Plain code
 let c = new Container()
 c.x = 100
