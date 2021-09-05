@@ -35,7 +35,8 @@ oxs<T>(target: T, attributes?: string, slots?: Container[], template?: () => Con
 
 > The attribute beginning with `#` means to set `name=*` and assign it to the member of the ancestor container with the same name
 
-> The attribute beginning with `@` means to listen for event, and the event handle function has been bound to the ancestor container as this
+> The attribute beginning with `@` means to listen for event, and the event handle function has been bound to the ancestor container as this. 
+>The following events automatically set `interactive=true`：tap,touchstart,touchmove,touchend,click,mousedown,mousemove,mouseup,pointertap,pointerdown,pointermove,pointerup
 
 > Other attributes means the attribute value of the target object to be set (only members of type `number` or `ObservablePoint` can be set)
 

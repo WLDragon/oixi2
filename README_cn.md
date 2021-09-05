@@ -33,7 +33,8 @@ oxs<T>(target: T, attributes?: string, slots?: Container[], template?: () => Con
 
 > `#`开头的属性表示设置`name=*`，并赋值给祖先容器的同名成员
 
-> `@`开头的属性表示监听事件，事件的处理函数已绑定了祖先容器作为this
+> `@`开头的属性表示监听事件，事件的处理函数已绑定了祖先容器作为this。
+> 以下事件自动设置`interactive=true`：tap,touchstart,touchmove,touchend,click,mousedown,mousemove,mouseup,pointertap,pointerdown,pointermove,pointerup
 
 > 其他属性表示设置目标对象的属性值（只能设置类型为`number`或`ObservablePoint`的成员）
 
