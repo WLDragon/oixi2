@@ -9,7 +9,7 @@ npm install oixi2
 ```
 ## Demo
 
-**You need to refer to the case source code to better understand the meaning of the following expressions** [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)
+**Need to refer to the demo source code to understand Oixi2** [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)
 
 ## Code style
 
@@ -23,7 +23,7 @@ OContainer([
 
 ## OXS function
 
-The main functions are `initialize properties` and `add children`
+Its capabilities are `initialize properties` and `add children`
 
 ``` ts
 oxs<T>(target: T, attributes?: string, slots?: Container[], template?: () => Container[]): T
@@ -33,9 +33,9 @@ oxs<T>(target: T, attributes?: string, slots?: Container[], template?: () => Con
 
 - attributes: String template for initializing properties, separated by spaces
 
-> The attribute at the beginning of `#` means to set `name=*` and assign it to the member of the ancestor container with the same name
+> The attribute beginning with `#` means to set `name=*` and assign it to the member of the ancestor container with the same name
 
-> The attribute at the beginning of `@` means to listen to event, and the event handle function has been bound to the ancestor container as this
+> The attribute beginning with `@` means to listen for event, and the event handle function has been bound to the ancestor container as this
 
 > Other attributes means the attribute value of the target object to be set (only members of type `number` or `ObservablePoint` can be set)
 
@@ -65,9 +65,9 @@ Both slots and templates support the following forms, essentially inheriting the
 
 ``` ts
 [
-  OText('#label', 'Hello!'), //内建组件
-  CustomComponent(), //自定义组件
-  new Sprite() //直接实例显示对象
+  OText('#label', 'Hello!'), //Built-in components
+  CustomComponent(), //Custom component
+  new Sprite() //Plain
 ]
 ```
 
@@ -86,9 +86,11 @@ export function Component(attributes: string) {
 }
 
 class XComponent extends Container {
-  title: Text = null //Note that this needs to be set to null, otherwise the title attribute cannot be found during initialization
+  //Note that this needs to be set to null
+  title: Text = null 
 
-  cats: Sprite[] = [] //Use an array to contain multiple #names
+  //Use an array to contain multiple #names
+  cats: Sprite[] = []
 
   created() {
     //the component has been initialized. eg. this.title...

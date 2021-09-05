@@ -7,7 +7,7 @@ npm install oixi2
 ```
 ## 案例
 
-**需要参考案例源码才能更好地理解下文表述的意思** [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)
+**需要参考案例源码才能理解Oixi2的意义** [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)
 
 ## 代码风格
 
@@ -84,8 +84,11 @@ export function Component(attributes: string) {
 }
 
 class XComponent extends Container {
-  title: Text = null //注意这里需要设置为null，否则初始化时找不到title属性
-  cats: Sprite[] = [] //使用数组包含多个相同的#name
+  //注意这里需要设置为null，否则初始化时找不到title属性
+  title: Text = null 
+
+  //使用数组包含多个相同的#name
+  cats: Sprite[] = [] 
 
   created() {
     //此时组件已经完成初始化。eg. this.title...
