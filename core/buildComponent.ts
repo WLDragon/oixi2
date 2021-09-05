@@ -1,7 +1,7 @@
 import { Container, ObservablePoint } from "pixi.js"
 
 const _oixi_ = '_oixi_'
-const TOUCH_EVENTS = 'tap,touchstart,touchmove,touchend,click,mousedown,mousemove,mouseup,pointertap,pointerdown,pointermove,pointerup'.split(',')
+const INTERACTIVE_EVENTS = 'tap,touchstart,touchmove,touchend,click,mousedown,mousemove,mouseup,pointertap,pointerdown,pointermove,pointerup'.split(',')
 
 class OixiData {
   /**绑定上下文为组件的事件 */
@@ -188,7 +188,7 @@ function applyEvents(child: Container, events: string[], component: Container) {
     let handleName = a[1]
     let handle = component[handleName]
     if (handle) {
-      if (TOUCH_EVENTS.includes(eventName)) {
+      if (INTERACTIVE_EVENTS.includes(eventName)) {
         child.interactive = true
       }
       child.on(eventName, handle, component)
