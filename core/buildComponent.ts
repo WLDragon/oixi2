@@ -1,7 +1,7 @@
 import { Container, ObservablePoint } from "pixi.js"
 
 const _oixi_ = '_oixi_'
-const TOUCH_EVENTS = ['tap', 'touchstart', 'touchend', 'touchmove']
+const TOUCH_EVENTS = 'tap,touchstart,touchmove,touchend,click,mousedown,mousemove,mouseup,pointertap,pointerdown,pointermove,pointerup'.split(',')
 
 class OixiData {
   /**绑定上下文为组件的事件 */
