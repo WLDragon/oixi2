@@ -58,7 +58,7 @@ target.on('tap', component.onTap)
 
 //component内需要定义
 private foo:Sprite = null
-private onTap = () => {}
+private onTap() {}
 ```
 
 - slots: 将要添加到组件的子显示对象列表，如果组件使用了template参数，则将子显示对象`addChild`到模板中指定的插槽的对象上(`name='slot'`)
