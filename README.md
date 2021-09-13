@@ -6,7 +6,19 @@
 
 ```
 npm install oixi2
+
+//Vanilla JS
+<script src="oixi2.umd.min.js"></script>
 ```
+
+## Usage
+``` 
+import { OText } from 'oixi2'
+
+//Vanilla JS
+const OText = oixi2.OText
+```
+
 ## Demo
 
 **Need to refer to the demo source code to understand Oixi2** [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)

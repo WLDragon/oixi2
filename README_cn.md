@@ -4,7 +4,19 @@
 
 ```
 npm install oixi2
+
+//Vanilla JS
+<script src="oixi2.umd.min.js"></script>
 ```
+
+## 使用
+``` 
+import { OText } from 'oixi2'
+
+//Vanilla JS
+const OText = oixi2.OText
+```
+
 ## 案例
 
 **需要参考案例源码才能理解Oixi2的意义** [Oixi2 Demo](https://github.com/WLDragon/oixi2_demo)
