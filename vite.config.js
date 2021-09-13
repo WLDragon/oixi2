@@ -28,8 +28,8 @@ export default {
     // minify: false,
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'oixi',
-      fileName: (format) => `oixi.${format}.min.js`
+      name: 'oixi2',
+      fileName: (format) => `oixi2.${format}.min.js`
     },
     rollupOptions: {
       external: ['pixi.js'],
