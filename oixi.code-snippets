@@ -1,0 +1,42 @@
+{
+    //vscode 代码片段模板
+    "Oixi2 component": {
+        "scope": "typescript",
+        "prefix": "oixi:component",
+        "body": [
+            "import { ox } from 'oixi2'",
+            "import { Container } from 'pixi.js'",
+            "",
+            "export function $1(attributes: string) {",
+            "  return ox(new X$1, attributes, () => [",
+            "",
+            "  ])",
+            "}",
+            "",
+            "export class X$1 extends Container {",
+            "",
+            "}"
+        ],
+        "description": "New oixi2 component"
+    },
+    "Oixi2 router": {
+        "scope": "typescript",
+        "prefix": "oixi:router",
+        "body": [
+            "import { ox } from 'oixi2'",
+            "import { Container } from 'pixi.js'",
+            "import { IRouter } from '../utils/router'",
+            "",
+            "export default function () {",
+            "  return ox(new A, null, () => [",
+            "    $0",
+            "  ])",
+            "}",
+            "",
+            "class A extends Container implements IRouter {",
+            "",
+            "}",
+        ],
+        "description": "New oixi2 router"
+    }
+}
