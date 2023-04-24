@@ -64,7 +64,7 @@ target.position.x = 0
 target.x = 0
 
 //parent内需要定义
-foo:Sprite = null
+foo:Sprite
 onTap() {}
 ```
 
@@ -97,8 +97,7 @@ export function Component(attributes: string) {
 }
 
 class XComponent extends Container {
-  //注意这里需要设置为null，否则初始化时找不到title属性
-  title: Text = null 
+  title: Text
 
   //使用数组包含多个相同的#name
   cats: Sprite[] = [] 

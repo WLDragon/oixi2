@@ -66,7 +66,7 @@ target.position.x = 0
 target.x = 0
 
 //Need to be defined in parent
-foo:Sprite = null
+foo:Sprite
 onTap() {}
 ```
 
@@ -99,8 +99,7 @@ export function Component(attributes: string) {
 }
 
 class XComponent extends Container {
-  //Note that this needs to be set to null
-  title: Text = null 
+  title: Text
 
   //Use an array to contain multiple #names
   cats: Sprite[] = []
