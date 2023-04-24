@@ -1,7 +1,7 @@
 {
   "name": "oixi2",
   "main": "src/index.ts",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Componentized development for PixiJs 6",
   "repository": {
     "type": "git",

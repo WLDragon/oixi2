@@ -156,14 +156,14 @@ function bindAttributes2Component(children: Container[], component: Container) {
       //将子显示对象赋值给组件
       let name = child.name
       if (name) {
-        if (name in component) {
-          if (Array.isArray(component[name])) {
-            component[name].push(child)
-          } else {
-            component[name] = child
-          }
-        } else if (name != 'slot') {
-          console.warn('oixi: no member match ' + name)
+        if (Array.isArray(component[name])) {
+          component[name].push(child)
+
+        } else if ((name in component) && component[name]) {
+          throw Error(`oixi: duplicate members! please set ${component['constructor'].name}.${name}=[]`)
+
+        } else {
+          component[name] = child
         }
       }
 
