@@ -1,5 +1,4 @@
 {
-    //vscode 代码片段模板
     "Oixi2 component": {
         "scope": "typescript",
         "prefix": "oixi:component",
@@ -7,13 +6,13 @@
             "import { ox } from 'oixi2'",
             "import { Container } from 'pixi.js'",
             "",
-            "export function $1(attributes: string) {",
-            "  return ox(new X$1, attributes, () => [",
+            "export function $0(attributes: string) {",
+            "  return ox(new X$0, attributes, () => [",
             "",
             "  ])",
             "}",
             "",
-            "export class X$1 extends Container {",
+            "export class X$0 extends Container {",
             "",
             "}"
         ],
@@ -38,5 +37,30 @@
             "}",
         ],
         "description": "New oixi2 router"
+    },
+    "Oixi2 pop": {
+        "scope": "typescript",
+        "prefix": "oixi:pop",
+        "body": [
+            "import AppPop from './AppPop'",
+            "",
+            "var _instance: X$0",
+            "export var $0 = {",
+            "    get instance() {",
+            "        return _instance || (_instance = new X$0)",
+            "    }",
+            "}",
+            "",
+            "export class X$0 extends AppPop {",
+            "",
+            "    constructor() {",
+            "        super([",
+            "            //your content",
+            "        ])",
+            "    }",
+            "",
+            "}"
+        ],
+        "description": "New oixi2 pop component"
     }
 }
