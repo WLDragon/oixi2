@@ -51,7 +51,7 @@
             "    }",
             "}",
             "",
-            "export class X$0 extends AppPop {",
+            "class X$0 extends AppPop {",
             "",
             "    constructor() {",
             "        super([",
